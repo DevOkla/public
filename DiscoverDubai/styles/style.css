@@ -1,0 +1,700 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    /* Ge alla element fonten poppins*/
+    font-family: "Poppins", sans-serif;
+}
+
+/* Ge specefika element en viss fontstorlek*/
+li,
+button,
+label,
+input,
+p {
+    font-size: 2.2rem;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+button {
+    padding: 2rem 6rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    /*Ge button en transition för hover effekt med 0.5s*/
+    transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+    background: rgb(64, 60, 87);
+}
+
+/*Global Header*/
+.main-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    /* Ge nav eget utrymme */
+    width: 90%;
+    margin-top: 10rem;
+    min-height: 10vh;
+}
+
+nav ul {
+    /*Nav-list får flex-wrap så att li-element hoppar ner om det inte finns plats*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+}
+
+nav a {
+    color: lightblue;
+}
+
+nav a:hover {
+    /*Vid hover ge effekten att texten får en transition ner med textshadow och själva texten göms*/
+    color: lightblue;
+
+    /*Ge den gamla textplatsen en opacity 0 så den försvinner och endast shadow är kvar för en fin effekt*/
+    color: rgba(0, 0, 0, 0);
+    text-shadow:
+        0 0.6rem #1095c1;
+
+    /*Ge lite tid för hover effekten med transition 0.2s*/
+    transition: 0.2s;
+}
+
+
+
+#logo {
+    margin-top: 2rem;
+    /*logo får en position absolut och med hjälp av margin-top 10vh i nav får de alltid samma bra avstånd från varandra*/
+    position: absolute;
+}
+
+#logo img {
+    width: 40rem;
+}
+
+
+
+
+
+
+/*Home sida*/
+/*Varje sida kommer att ha en stor main-container som inkluderar head och huvud sektionerna*/
+#home-container {
+    /*Ge en bakgrundsbild med mörk gradient så att den vita texten på hela sidan syns bra och man inte får problem med contrast*/
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+        url("../Images/pexels-Dubai1.jpg");
+    background-size: cover;
+    /*Ge minst 80vh utrymme för home-container*/
+    min-height: 80vh;
+}
+
+
+
+.home {
+    min-height: 80vh;
+    margin-top: 5%;
+    /*Gör att backgrundsbilden inte upprepas*/
+    background-repeat: no-repeat;
+    /*Gör att backgrundsbilden täker hela sidan*/
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home h3 {
+    /*Ge lite utrymme*/
+    padding: 2rem;
+}
+
+.home button {
+    /*Ge lite utrymme från texten*/
+    margin-top: 5rem;
+}
+
+
+
+
+
+
+/*Benefits sida*/
+#benefits-container {
+    /*Ge en bakgrundsbild med lite ljusare gradient eftersom vi har en till container inuti*/
+    background: linear-gradient(rgba(21, 20, 50, 0.9), rgba(134, 123, 181, 0.7), rgba(255, 255, 255, 0.5)),
+        url("../Images/pexels-beach-girl.jpg");
+    background-size: cover;
+    /*Ge större minsta-utrymme för benefits-container då den har ganska många element*/
+    min-height: 110vh;
+}
+
+#benefits {
+    min-height: 80vh;
+    /*width 90% med 5% på höger och vänster centrerar containern*/
+    width: 90%;
+    /*det räcker med margin-left då den börjar från vänster */
+    margin-left: 5%;
+    /*Ge backgrund med mörk gradient så att den vita texten syns bra*/
+    background: linear-gradient(to right bottom,
+            rgba(21, 22, 86, 0.7),
+            rgba(53, 49, 61, 0.4));
+    border-radius: 2rem;
+    /*Ge en fin blur-effekt så att backgrundsbilden på den större container syns genom #benefits*/
+    backdrop-filter: blur(0.3rem);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(219, 220, 253);
+    display: flex;
+    /*centrera allt innehåll med flex-egeneskaper*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.benefits-head {
+    /*Ge lite utrymme*/
+    padding: 4rem;
+}
+
+.benefits-head h1 {
+    /*Ge lite utrymme*/
+    padding: 2rem;
+}
+
+.cards {
+    /*Cards får en display flex och en wrap så hoppar de ner om de får ont om plats*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    /*Viktigt att ange flex så att korten får lika stor bredd*/
+    /*flex 1 35% verkar passa perfekt eftersom det 3 stycken kort så att det tredje kortet inte hoppar ner för tidigt*/
+    flex: 1 35%;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    /*lite fin boxshadow effekt*/
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    /*Ge backgrund med mörk gradient så att den vita texten syns bra*/
+    background: linear-gradient(rgba(92, 85, 109, 0.7), rgba(49, 51, 94, 0.6));
+    /*Ge border radius endast från botten-höger och botten-vänster*/
+    border-radius: 0rem 0rem 4rem 4rem;
+}
+
+.cards img {
+    max-width: 15%;
+    margin: 2rem;
+}
+
+.card h4,
+.card p {
+    padding: 1rem;
+    line-height: 1.8;
+}
+
+.card-icon {
+    /*Radial-gradient ger snyggare effekt bakom ikonen*/
+    background: radial-gradient(rgb(163, 153, 189), rgb(58, 61, 112));
+}
+
+
+
+
+
+
+
+
+/*Round_Tour Sida*/
+#round-tour-container {
+    /*Ge backgrundsbild med mörk gradient så att den vita texten syns bra*/
+    background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+        url("../Images/pexels-burj-khalifa1.jpg");
+    background-size: cover;
+    /*Ge ganska stor minsta-höjd 180vh eftersom det finns för många element */
+    min-height: 180vh;
+}
+
+#Gallery {
+    /*Wdith 80% med margin-left 10% centrerar #Gallery*/
+    width: 80%;
+    margin-left: 10%;
+    /*Ge backgrund med ljus gradient eftersom det är endast bilder*/
+    background: linear-gradient(45deg, rgba(199, 243, 186, 0.7), rgba(106, 106, 254, 0.5));
+    border-radius: 2rem;
+    /*lite blur effekt så backgrundsbilden syns lite*/
+    backdrop-filter: blur(0.3rem);
+    padding: 2rem;
+}
+
+.Gallery-heading h2 {
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    /*Ge backgrund med mörk gradient så att den vita texten syns bra*/
+    background: linear-gradient(rgba(92, 85, 109, 0.7), rgba(49, 51, 94, 0.6));
+}
+
+.photos-container {
+    /*Grid för bilderna*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+/*Testat fram till att de blir bäst om man anger följande grid-egenskaper till varje bild*/
+.photo1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.photo2 {
+    grid-column: 1/3;
+    grid-row: 2/5;
+}
+
+.photo3 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.photo4 {
+    grid-column: 3/3;
+    grid-row: 2/4;
+}
+
+/*varje bild ska fylla hela utrymmet inuti grid-kanterna för denna bild*/
+#Gallery img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#customer {
+    /*lite utrymme från #Gallery*/
+    margin-top: 2rem;
+    /*Wdith 80% med margin-left 10% centrerar #customer*/
+    width: 80%;
+    margin-left: 10%;
+    /*Ge backgrund med ljus gradient eftersom det är mörk text*/
+    background: linear-gradient(45deg, rgba(199, 243, 186, 0.7), rgba(106, 106, 254, 0.5));
+    border-radius: 2rem;
+    /*samma blur effekt som #Gallery så backgrundsbilden syns lite*/
+    backdrop-filter: blur(0.3rem);
+    /*en minsta höjd då det finns lite text och man vill inte att det ska bli tajt*/
+    min-height: 30vh;
+    padding: 4rem;
+    /*en annan font för kommentaren så den skiljer sig från resten av sidan*/
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#customer h2 {
+    margin: 0rem 0rem 2rem 2rem;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+}
+
+.customer-info img {
+    /*width och height lika stora värde för att border radius på 50% ska ge en cirkel*/
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.customer-comment img {
+    /*förminska bilden så att det blir som en liten profile-bild*/
+    width: 20rem;
+}
+
+.customer-comment {
+    margin-left: 4%;
+    width: 80%;
+    padding: 2rem;
+    /*Ge backgrund med ljus gradient eftersom det är mörk text*/
+    background-color: lightgray;
+    /*ingen border-radius från top-vänster så det ser ut som en kommentar */
+    border-radius: 0rem 1rem 1rem 1rem;
+}
+
+
+
+
+
+
+
+/*Contact sida*/
+#contact-container {
+    /*Ge backgrundsbild med mörk gradient så att den vita texten syns bra*/
+    background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+        url("../Images/pexels-torsten-dettlaff-69866.jpg");
+    background-size: cover;
+    min-height: 140vh;
+}
+
+/*contact sida*/
+
+#contact {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*flex för att centrera allt*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    /*Ge backgrund med mörk gradient så att den vita texten syns bra*/
+    background: linear-gradient(to right bottom,
+            rgba(21, 22, 86, 0.7),
+            rgba(53, 49, 61, 0.4));
+    border-radius: 2rem;
+    /* blur effekt som så backgrundsbilden syns lite*/
+    backdrop-filter: blur(0.3rem);
+    /*mindre width då det är inte lika många element*/
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+}
+
+.form-head {
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form,
+.email-form,
+.text-form {
+    /*centrera allt med lite utrymme från varandra*/
+    padding: 3rem;
+    text-align: center;
+}
+
+.text-form textarea {
+    /*Gör att text-form-label inte hamnar längst ner utan det blir längst upp vid textarea*/
+    vertical-align: top;
+}
+
+.form-containerlabel {
+    margin: 0rem 3rem;
+}
+
+.form-container button {
+    /*button får hela bredden som sin parent .form-container*/
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    /*testar ett annat tydligare sätt att ange borderradius*/
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-container input,
+textarea {
+    margin-left: 2rem;
+    padding: 1rem 3rem;
+    /*gör att textarea inte sträcker sig för mycket till högerkanten av .form-container*/
+    max-width: 90%;
+}
+
+form p {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+form p a {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/*About sida*/
+#about-container {
+    /*Ge backgrundsbild med mörk gradient så att den vita texten syns bra*/
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+        url("../Images/pexels-gril-travalling.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}
+
+.about-us {
+    /*Ge backgrund med mörk gradient så att den vita texten syns bra*/
+    background: linear-gradient(to right bottom,
+            rgba(21, 22, 86, 0.7),
+            rgba(53, 49, 61, 0.4));
+    border-radius: 2rem;
+
+    width: 80%;
+    margin-left: 10%;
+    min-height: 70vh;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    justify-content: center;
+}
+
+.about-us p {
+    margin: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer {
+    color: rgb(210, 229, 254);
+    /*Ge backgrund med mörk gradient så att den vita texten syns bra*/
+    background: linear-gradient(to top right, rgb(58, 61, 112), rgb(32, 35, 78))
+}
+
+.footer-container {
+    /*ge flex och lite padding smat centrera allt innehåll i footer*/
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    align-items: center;
+    min-height: 10vh;
+    /*wrap .socials och .info om det blir ont om plats */
+    flex-wrap: wrap;
+}
+
+
+
+footer ul {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    /*Flex 50% gör att .socials får lite avstånd från .info*/
+    flex: 1 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stample img {
+    /*förminska stample img*/
+    width: 20rem;
+}
+
+.owner {
+    width: 60%;
+    padding: 1rem;
+    /*Ge backgrund med mörkare gradient så att den vita texten syns bra*/
+    background: linear-gradient(to right bottom,
+            rgba(21, 22, 86, 0.7),
+            rgba(53, 49, 61, 0.4));
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Queries*/
+
+/* små skärmar (mobiltelefon, 600px och ner) */
+@media screen and (max-width: 600px) {
+
+    /*Global mobil*/
+    html {
+        /*förminska textstorleken för mobiler till 45%*/
+        font-size: 45%;
+    }
+
+    nav {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    nav ul li {
+        /*ändra utseendet på nav list-elementen så att det får en border och en mörk bakgrundsfärg*/
+        text-align: center;
+        width: 100%;
+        padding: 2rem;
+        /*Ge backgrund med mörk gradient så att den vita li-texten syns bra*/
+        background: linear-gradient(rgba(48, 34, 90, 0.8), rgba(0, 0, 0, 0.5));
+        border: 1px solid white;
+    }
+
+
+
+    /*Home sida mobil*/
+    #home-container {
+        /*height 100 view hight då auto ger för stor onödig höjd*/
+        height: 100vh;
+    }
+
+    /*Benefits sida mobil*/
+    #benefits-container {
+        /*height auto gör att det blir exakt lika stor höjd som behövs för #benefits-container*/
+        height: auto;
+    }
+
+    #benefits {
+        /*height auto gör att det blir exakt lika stor höjd som behövs för #benefits*/
+        height: auto;
+    }
+
+    /*Round tour sida mobil*/
+
+    #round-tour-container {
+        height: auto;
+        /*väljer att ta bort backgrundsbilden då det blir zoomad in för mycket så det blir onödigt*/
+        background-image: none;
+        background: linear-gradient(rgba(48, 34, 90, 0.8), rgba(0, 0, 0, 0.5));
+    }
+
+    .photos-container {
+        /*väljer bort grid och tar istället flex.*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .photos-container div {
+        /*Alla div för alla bilder inom photo-container*/
+        width: 100%;
+    }
+
+    #Gallery img {
+        /*alla bilder får width 100% av div storleken, vilket också är 100% av .photos-container*/
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .customer-comment {
+        width: 90%;
+        margin: 2rem;
+    }
+
+    /*Contact sida mobil*/
+    #contact-container {
+        height: auto;
+    }
+
+    .form-container {
+        width: 80%;
+    }
+
+    #contact {
+        height: auto;
+    }
+
+    /*About sida mobil*/
+    #about-container {
+        height: auto;
+
+    }
+
+    .about-us {
+        height: auto;
+    }
+
+
+    /*Footer mobil*/
+    .footer-container ul {
+        /*.socials lista blir i row istället*/
+        padding: 4rem;
+        flex-direction: row;
+    }
+
+    .owner {
+        width: 100%;
+    }
+
+}
+
+
+/* mindre skärmar (Ipads, tablets, små laptops, mellan 600px och 1023px) */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    html {
+        /*minska fontstorleken för ipads till 60%*/
+        font-size: 60%;
+    }
+
+    .customer-comment {
+        width: 90%;
+        margin: 2rem;
+    }
+}
+
+/*stora skärmar (laptops och desktops, 1023px och upp) */
+@media only screen and (min-width: 1023px) {
+    html {
+        font-size: 100%;
+    }
+}

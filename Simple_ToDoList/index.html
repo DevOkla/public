@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>ToDo List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <header id="mainheader">
+      <div class="contain">
+        <h1 id="logo">ToDo List</h1>
+      </div>
+      <!-- /.contain -->
+    </header>
+
+    <div class="container">
+
+
+      <h3>Add item to the Todo-list</h3>
+      <h3>All items will be saved to your browser's local storage.<br> That way, you will have access to them even if
+        you
+        reload
+        the page!
+      </h3>
+
+      <section id="new">
+        <label for="newtodo">To do:</label><br />
+        <input type="text" id="newtodo" />&nbsp;
+        <button class="btn" id="newtodobutton"> Add <i class="fas fa-plus-square"> </i> </button><br />
+        <span id="message"></span>
+      </section>
+
+      <h2>Things to do:</h2>
+      <h5>Press on any item to remove from both current session and local storage. </h5>
+      <section id="todolist">
+
+
+      </section>
+
+      <button id="clearbutton" class="btn"> <i id="removeIcon" class="fas fa-trash">
+        </i> </button>
+      <label for="button" style="font-weight:bold;">Clears all items!</label>
+
+    </div>
+    <!-- /.container -->
+    <footer>
+      <p>
+        Powered by &copy; DevOkla
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
