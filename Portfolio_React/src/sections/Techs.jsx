@@ -15,7 +15,7 @@ import {
   FileZillaCard,
   GithubCard,
   ImgVideoCard,
-} from "./Cards/index.js";
+} from "../components/Cards/index.js";
 
 const Techs = () => {
   return (

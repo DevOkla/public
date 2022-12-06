@@ -8,7 +8,7 @@ import {
   SRadio,
   OpenAiProject,
   RecipeProject,
-  ToDoProject,
+  ToDoProject,DogApiProject, PhotographerProject, Music
 } from "../components/projects/index.js";
 import Lights from "../Assets/Lights.jpg";
 
@@ -54,6 +54,15 @@ const Projects = () => {
           </SplideSlide>
           <SplideSlide>
             <ToDoProject />
+          </SplideSlide>
+          <SplideSlide>
+            <DogApiProject />
+          </SplideSlide>
+          <SplideSlide>
+            <PhotographerProject />
+          </SplideSlide>
+          <SplideSlide>
+            <Music />
           </SplideSlide>
         </Splide>
       </ProjectsDiv>
