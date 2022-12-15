@@ -1,6 +1,6 @@
 'use strict';
 
-let API_Key = '563492ad6f9170000100000197b3f2ff2de44d0f8b46fa4f7b03d27b';
+let API_Key = ;
 
 /*Variables*/
 const gallery = document.getElementById('gallery');
