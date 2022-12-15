@@ -20,7 +20,23 @@ const VSCodeCard = () => {
           <CardFront>
             <SiVisualstudiocode />
           </CardFront>
-          <CardBack></CardBack>
+          <CardBack>
+            <Bars>
+              <Green />
+              <Green />
+              <Green />
+              <Green />
+              <Green />
+            </Bars>
+            <h2>
+              Visutal <br /> Studio Code
+            </h2>
+            &nbsp;
+            <h4>Extensions & git tooling </h4>
+            <h4>Run & Debug code </h4>
+            <h4>Formatting & Snippets </h4>
+            <h4>Synchronize with GitHub </h4>
+          </CardBack>
         </CardBox>
       </Card>
     </Cards>

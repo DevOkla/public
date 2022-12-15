@@ -46,7 +46,7 @@ function loadImg(key) {
     .then((data) => {
       displayImg(data.message);
       let h3El = document.createElement("h3");
-      h3El.id = "h3";
+      h3El.id = "H3";
       h3El.innerHTML = "Dog-breed: " + key;
       contentEl.appendChild(h3El);
     })

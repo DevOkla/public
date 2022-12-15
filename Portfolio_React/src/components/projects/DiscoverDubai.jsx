@@ -28,22 +28,38 @@ const DiscoverDubai = () => {
           </LI>
           <LI>
             <AiOutlineCheck />
+            Structural Semantics
+          </LI>
+          <LI>
+            <AiOutlineCheck />
             CSS
           </LI>
           <LI>
             <AiOutlineCheck />
-            Photoshop
+            WCAG 2 Validated
+          </LI>
+          <LI>
+            <AiOutlineCheck />
+            Well-Commented Code
           </LI>
         </UL>
         <Buttons>
           <Button>
-            <a href="https://devokla-discover-dubai.netlify.app/">
+            <a
+              href="https://devokla-discover-dubai.netlify.app/"
+              target="_blank"
+            >
               Website &nbsp; <CgWebsite />
             </a>
           </Button>
           <Button>
-            Code &nbsp;
-            <VscFileCode />
+            <a
+              href="https://github.com/DevOkla/public/tree/main/DiscoverDubai"
+              target="_blank"
+            >
+              Code &nbsp;
+              <VscFileCode />
+            </a>
           </Button>
         </Buttons>
       </Left>

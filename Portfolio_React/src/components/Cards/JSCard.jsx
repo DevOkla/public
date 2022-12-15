@@ -20,7 +20,22 @@ const JSCard = () => {
           <CardFront>
             <SiJavascript />
           </CardFront>
-          <CardBack></CardBack>
+          <CardBack>
+            <Bars>
+              <Green />
+              <Green />
+              <Green />
+              <Green />
+              <Red />
+            </Bars>
+            <h2>Vanilla JS </h2>
+            <h4>Functions & Objects</h4>
+            <h4>Events & Local Storage</h4>
+            <h4>OOP & DOM-Manipulation</h4>
+            <h4>Ajax & JSON</h4>
+            <h4>Consume REST API</h4>
+            <h4>Fetch & Error Handling </h4>
+          </CardBack>
         </CardBox>
       </Card>
     </Cards>

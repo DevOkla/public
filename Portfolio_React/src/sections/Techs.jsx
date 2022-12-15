@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import binary from "../Assets/binary.jpg";
+import { H1 } from "../components/projects/Project.style.js";
 import {
-  APICard,
   TailWindCard,
   StyledCompCard,
   SASSCard,
@@ -14,12 +14,12 @@ import {
   FigmaCard,
   FileZillaCard,
   GithubCard,
-  ImgVideoCard,
+  ValidatedCode,
 } from "../components/Cards/index.js";
 
 const Techs = () => {
   return (
-    <TechsContainer>
+    <TechsContainer id="Technologies">
       <H1>Technologies </H1>
       <CardsContainer>
         <HTMLCard />
@@ -29,25 +29,17 @@ const Techs = () => {
         <StyledCompCard />
         <SASSCard />
         <TailWindCard />
-        <APICard />
+
         <VSCodeCard />
         <FigmaCard />
         <FileZillaCard />
         <GithubCard />
-        <ImgVideoCard />
+        <ValidatedCode />
       </CardsContainer>
     </TechsContainer>
   );
 };
-const H1 = styled.h1`
-  padding: 2rem 0;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 2.5rem;
-`;
+
 const TechsContainer = styled.div`
   background: linear-gradient(
       to bottom,
@@ -67,5 +59,12 @@ const CardsContainer = styled.div`
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
+  max-width: 90rem;
+  margin: auto;
+  @media (max-width: 750px) {
+    padding: 2rem 1rem;
+    max-width: 95rem;
+    width: 100%;
+  }
 `;
 export default Techs;

@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineCheck } from "react-icons/ai";
 import { VscFileCode } from "react-icons/vsc";
 import { CgWebsite } from "react-icons/cg";
-import OpenAI from "../../Assets/OpenAI.png";
+import Pexon from "../../Assets/Pexon.png";
 import {
   Project,
   Left,
@@ -15,22 +15,25 @@ import {
   Right,
   IMG,
 } from "./Project.style.js";
-const OpenAiProject = () => {
+const PexonProject = () => {
   return (
     <Project>
       <Left>
-        <Heading>Open AI</Heading>
+        <Heading> Photographer</Heading>
         <Skills>Skills</Skills>
         <UL>
           <LI>
             <AiOutlineCheck />
-            React
+            HTML & CSS
           </LI>
           <LI>
             <AiOutlineCheck />
-            CSS BEM
+            JavaScript
           </LI>
-
+          <LI>
+            <AiOutlineCheck />
+            Fetch API
+          </LI>
           <LI>
             <AiOutlineCheck />
             Responsive Design
@@ -38,13 +41,13 @@ const OpenAiProject = () => {
         </UL>
         <Buttons>
           <Button>
-            <a href="https://devokla-open-ai.netlify.app/" target="_blank">
+            <a href="https://devokla-pexon.netlify.app/" target="_blank">
               Website &nbsp; <CgWebsite />
             </a>
           </Button>
           <Button>
             <a
-              href="https://github.com/DevOkla/public/tree/main/GPT3OpenAI_React/src"
+              href="https://github.com/DevOkla/public/tree/main/AhmadPhotography"
               target="_blank"
             >
               Code &nbsp;
@@ -54,10 +57,10 @@ const OpenAiProject = () => {
         </Buttons>
       </Left>
       <Right>
-        <IMG src={OpenAI} alt="Dubai"></IMG>
+        <IMG src={Pexon} alt="Dubai"></IMG>
       </Right>
     </Project>
   );
 };
 
-export default OpenAiProject;
+export default PexonProject;

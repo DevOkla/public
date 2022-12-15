@@ -20,7 +20,22 @@ const CSSCard = () => {
           <CardFront>
             <SiCss3 />
           </CardFront>
-          <CardBack></CardBack>
+          <CardBack>
+            <Bars>
+              <Green />
+              <Green />
+              <Green />
+              <Green />
+              <Red />
+            </Bars>
+            <h2>CSS3</h2>
+            &nbsp;
+            <h4>Positioning, Flex, Grid</h4>
+            <h4>Selectors & Pseudo </h4>
+            <h4>Animations & Shadows</h4>
+            <h4>Responsive Design </h4>
+            <h4> Media Queries</h4>
+          </CardBack>
         </CardBox>
       </Card>
     </Cards>

@@ -5,5 +5,6 @@ export { default as SRadio } from './SRadio';
 export { default as ToDoProject } from './ToDoProject';
 export { default as DogApiProject } from './DogApiProject';
 export { default as PhotographerProject } from './PhotographerProject';
-export { default as Music } from './Music';
+export { default as PexonProject } from './PexonProject';
+
 

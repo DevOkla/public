@@ -21,12 +21,17 @@ const FileZillaCard = () => {
             <SiFilezilla />
           </CardFront>
           <CardBack>
-            <h2>HTML</h2>
+            <Bars>
+              <Green />
+              <Green />
+              <Red />
+              <Red />
+              <Red />
+            </Bars>
+            <h2>FileZilla</h2>
             &nbsp;
-            <h4>Elements & Attributes</h4>
-            <h4>Web Design & Media</h4>
-            <h4>Production & documentation</h4>
-            <h4>Strong Analytical Skills</h4>
+            <h4>File Transfer Protocols </h4>
+            <h4>Safely Exchanging Files </h4>
           </CardBack>
         </CardBox>
       </Card>

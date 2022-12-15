@@ -21,12 +21,19 @@ const GithubCard = () => {
             <SiGithub />
           </CardFront>
           <CardBack>
-            <h2>HTML</h2>
+            <Bars>
+              <Green />
+              <Green />
+              <Red />
+              <Red />
+              <Red />
+            </Bars>
+            <h2>Github</h2>
             &nbsp;
-            <h4>Elements & Attributes</h4>
-            <h4>Web Design & Media</h4>
-            <h4>Production & documentation</h4>
-            <h4>Strong Analytical Skills</h4>
+            <h4>Storing & Tracking</h4>
+            <h4>Version & Source control </h4>
+            <h4>Pushing & Pulling </h4>
+            <h4>Github Desktop </h4>
           </CardBack>
         </CardBox>
       </Card>

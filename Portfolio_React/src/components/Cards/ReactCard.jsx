@@ -21,12 +21,20 @@ const ReactCard = () => {
             <SiReact />
           </CardFront>
           <CardBack>
+            <Bars>
+              <Green />
+              <Green />
+              <Green />
+              <Red />
+              <Red />
+            </Bars>
             <h2>React</h2>
             &nbsp;
             <h4>React fundamentals</h4>
-            <h4>JSX</h4>
+            <h4>Hooks & Dependencies</h4>
+            <h4>JSX & Modules</h4>
             <h4>Virtual DOM</h4>
-            <h4>Node.js</h4>
+            <h4>Node & npm </h4>
           </CardBack>
         </CardBox>
       </Card>

@@ -27,14 +27,14 @@ const HTMLCard = () => {
               <Green />
               <Green />
               <Green />
-              <Red />
+              <Green />
             </Bars>
-            <h2>HTML</h2>
+            <h2>HTML5</h2>
             &nbsp;
             <h4>Elements & Attributes</h4>
             <h4>Web Design & Media</h4>
             <h4>Production & documentation</h4>
-            <h4>Strong Analytical Skills</h4>
+            <h4>Semantical & Validated</h4>
           </CardBack>
         </CardBox>
       </Card>

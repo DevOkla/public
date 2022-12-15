@@ -2,6 +2,7 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 html {
   font-size: 62.5%;
@@ -19,24 +20,24 @@ header {
   width: 100%;
 }
 nav {
-  width: 100%;
   background: rgba(6, 6, 60, 0.8);
   color: white;
   display: flex;
-  flex-wrap: wrap;
-  height: 14vh;
+
+  height: 17vh;
 
   justify-content: space-evenly;
   align-items: center;
 }
 #logo {
-  flex: 1 1 20px;
+  flex: 0.6;
   margin-left: 2rem;
 }
 ul {
   display: flex;
   justify-content: space-evenly;
-  flex: 1 2 20px;
+
+  flex: 0.4;
   list-style: none;
   align-items: center;
   font-size: 2rem;
@@ -74,7 +75,7 @@ a {
 
 .insta i {
   padding: 0 0.3rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   background: radial-gradient(
     circle at 33% 100%,
     #fed373 4%,
@@ -195,7 +196,6 @@ a {
   display: flex;
   flex-direction: column;
 
-  height: 100%;
   width: 100%;
   margin: auto;
   background: linear-gradient(rgba(12, 12, 84, 0.8), transparent),
@@ -206,14 +206,14 @@ a {
   background-position: center;
 }
 .form-wrapper h2 {
-  margin-left: 5%;
+  padding-left: 5%;
 }
 .form-wrapper form {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  margin: 3% 5%;
+  padding: 3% 5%;
 
   font-size: 4rem;
 }
@@ -277,6 +277,7 @@ footer li a {
   nav ul {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     padding: 1rem;
   }
 
@@ -310,5 +311,15 @@ footer li a {
 @media screen and (max-width: 550px) {
   html {
     font-size: 8px;
+  }
+  nav {
+    min-height: 30vh;
+  }
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
   }
 }

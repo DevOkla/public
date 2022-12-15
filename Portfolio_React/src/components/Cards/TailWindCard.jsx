@@ -19,7 +19,22 @@ const TailWindCard = () => {
           <CardFront>
             <SiTailwindcss />
           </CardFront>
-          <CardBack></CardBack>
+          <CardBack>
+            <Bars>
+              <Green />
+              <Red />
+              <Red />
+              <Red />
+              <Red />
+            </Bars>
+            <h2>Tailwind</h2>
+            &nbsp;
+            <h4>Snytax & States</h4>
+            <h4>componenet styling</h4>
+            <h4>Sizing & Colors</h4>
+            <h4>Typography & Shadows</h4>
+            <h4>Mobile-first</h4>
+          </CardBack>
         </CardBox>
       </Card>
     </Cards>

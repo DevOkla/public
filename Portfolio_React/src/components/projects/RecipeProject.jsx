@@ -24,22 +24,27 @@ const RecipeProject = () => {
         <UL>
           <LI>
             <AiOutlineCheck />
-            HTML
+            React
           </LI>
           <LI>
             <AiOutlineCheck />
-            CSS
+            SplideJS
           </LI>
           <LI>
             <AiOutlineCheck />
-            JavaScript
+            Fetch API
           </LI>
           <LI>
             <AiOutlineCheck />
-            BEM
+            Search Functionality
           </LI>
           <LI>
             <AiOutlineCheck />
+            Styled Components
+          </LI>
+          <LI>
+            <AiOutlineCheck />
+            Responsive Design
           </LI>
         </UL>
         <Buttons>
@@ -49,8 +54,12 @@ const RecipeProject = () => {
             </a>
           </Button>
           <Button>
-            Code &nbsp;
-            <VscFileCode />
+            <a
+              href="https://github.com/DevOkla/public/tree/main/Recipe__React/src/src"
+              target="_blank"
+            >
+              Code &nbsp; <VscFileCode />
+            </a>
           </Button>
         </Buttons>
       </Left>

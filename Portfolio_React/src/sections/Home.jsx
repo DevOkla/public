@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Hero from "../components/Hero";
-import Nav from "../components/Nav";
+
 import TechWorld from "../Assets/TechWorld.jpg";
 const Home = () => {
   return (
     <HomeConatiner>
-      <Nav />
       <Hero />
     </HomeConatiner>
   );
@@ -18,7 +17,7 @@ const HomeConatiner = styled.div`
 
   background-image: linear-gradient(
       rgba(4, 0, 23, 0.9),
-      rgba(38, 0, 120, 0.6),
+      rgba(22, 0, 70, 0.64),
       rgba(3, 0, 15, 0.9)
     ),
     url(${TechWorld});

@@ -9,107 +9,36 @@ body {
   background: var(--color-bg);
   font-family: var(--font-family);
 }
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(14, 2, 78);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  border: 2.5px solid blue;
+}
 
 a {
   color: unset;
   text-decoration: none;
 }
 
-.gradient__bg {
-  /*Made with angrytools.com/gradient/*/
-  /* ff 3.6+ */
-  background: -moz-radial-gradient(
-    circle at 3% 25%,
-    rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
-  );
+ 
 
-  /* safari 5.1+,chrome 10+ */
-  background: -webkit-radial-gradient(
-    circle at 3% 25%,
-    rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
-  );
-
-  /* opera 11.10+ */
-  background: -o-radial-gradient(
-    circle at 3% 25%,
-    rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
-  );
-
-  /* ie 10+ */
-  background: -ms-radial-gradient(
-    circle at 3% 25%,
-    rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
-  );
-
-  /* global 92%+ browsers support */
-  background: radial-gradient(
-    circle at 3% 25%,
-    rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
-  );
-}
-
-.gradient__text {
-  background: var(--gradient-text);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.section__padding {
-  padding: 4rem 6rem;
-}
-.section__margin {
-  margin: 4rem 6rem;
-}
-
-/*Animation made wtih animista.net*/
-.scale-up-center {
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
-    both;
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-@-webkit-keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
 /*Smaller screens*/
-@media screen and (max-width: 700px) {
-  .section__padding {
-    padding: 4rem;
-  }
-  .section__padding {
-    padding: 4rem;
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 70%;
   }
 }
-
-/*Mobile*/
-@media screen and (max-width: 550px) {
-  .section__padding {
-    padding: 4rem 2rem;
-  }
-  .section__padding {
-    padding: 4rem 2rem;
+/*Very small screens*/
+@media screen and (max-width: 390px) {
+  html {
+    font-size: 55%;
   }
 }

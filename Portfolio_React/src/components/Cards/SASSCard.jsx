@@ -20,7 +20,21 @@ const SASSCard = () => {
           <CardFront>
             <SiSass />
           </CardFront>
-          <CardBack></CardBack>
+          <CardBack>
+            <Bars>
+              <Green />
+              <Green />
+              <Red />
+              <Red />
+              <Red />
+            </Bars>
+            <h2>SASS</h2>
+            &nbsp;
+            <h4>Variables & Nesting</h4>
+            <h4>Pseudo & Operators</h4>
+            <h4>Mixins & Partials </h4>
+            <h4>Extending Styles</h4>
+          </CardBack>
         </CardBox>
       </Card>
     </Cards>

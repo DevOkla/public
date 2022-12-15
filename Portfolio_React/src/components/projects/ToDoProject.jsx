@@ -20,7 +20,7 @@ const ToDoProject = () => {
     <Project>
       <Left>
         <Heading>Simple ToDo-List</Heading>
-        <Skills>Skills Used</Skills>
+        <Skills>Skills</Skills>
         <UL>
           <LI>
             <AiOutlineCheck />
@@ -34,7 +34,7 @@ const ToDoProject = () => {
             <AiOutlineCheck /> Local Storage
           </LI>
           <LI>
-            <AiOutlineCheck /> Simple HTML & CSS
+            <AiOutlineCheck /> HTML & CSS
           </LI>
           <LI>
             <AiOutlineCheck /> Responsive Design
@@ -56,7 +56,7 @@ const ToDoProject = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Code &nbsp; <CgWebsite />
+              Code &nbsp;
             </a>
 
             <VscFileCode />

@@ -32,19 +32,30 @@ const PhotographerProject = () => {
           </LI>
           <LI>
             <AiOutlineCheck />
-        Responsive Design
+            Responsive Design
           </LI>
-      
+          <LI>
+            <AiOutlineCheck />
+            Customer Feedback
+          </LI>
         </UL>
         <Buttons>
           <Button>
-            <a href="https://devokla-recipe-app.netlify.app/" target="_blank">
+            <a
+              href="https://devokla-ahmad-photography.netlify.app/"
+              target="_blank"
+            >
               Website &nbsp; <CgWebsite />
             </a>
           </Button>
           <Button>
-            Code &nbsp;
-            <VscFileCode />
+            <a
+              href="https://github.com/DevOkla/public/tree/main/AhmadPhotography"
+              target="_blank"
+            >
+              Code &nbsp;
+              <VscFileCode />
+            </a>
           </Button>
         </Buttons>
       </Left>

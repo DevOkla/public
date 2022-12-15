@@ -2,21 +2,24 @@ import React from "react";
 import styled from "styled-components";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-
+import { H1 } from "../components/projects/Project.style.js";
 import {
   DiscoverDubai,
   SRadio,
   OpenAiProject,
   RecipeProject,
-  ToDoProject,DogApiProject, PhotographerProject, Music
+  ToDoProject,
+  DogApiProject,
+  PhotographerProject,
+  PexonProject,
 } from "../components/projects/index.js";
 import Lights from "../Assets/Lights.jpg";
 
 const Projects = () => {
   return (
     <ProjectsContainer id="Projects">
-      <H1>Projects</H1>
       <ProjectsDiv>
+        <H1>Chosen Projects</H1>
         <Splide
           options={{
             autoplay: true,
@@ -24,12 +27,15 @@ const Projects = () => {
             interval: 3800,
             speed: 2000,
             width: "100%",
-
             pagination: true,
             start: 1,
             perMove: 1,
             perPage: 2,
-
+            breakpoints: {
+              900: {
+                perPage: 1,
+              },
+            },
             fixedHeight: "27rem",
             padding: 40,
             focus: "center",
@@ -53,6 +59,9 @@ const Projects = () => {
             <RecipeProject />
           </SplideSlide>
           <SplideSlide>
+            <PexonProject />
+          </SplideSlide>
+          <SplideSlide>
             <ToDoProject />
           </SplideSlide>
           <SplideSlide>
@@ -61,28 +70,18 @@ const Projects = () => {
           <SplideSlide>
             <PhotographerProject />
           </SplideSlide>
-          <SplideSlide>
-            <Music />
-          </SplideSlide>
         </Splide>
       </ProjectsDiv>
     </ProjectsContainer>
   );
 };
 
-const H1 = styled.h1`
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 2.5rem;
-`;
 const ProjectsDiv = styled.div`
   width: 100%;
   display: flex;
-  margin-top: 2rem;
-  padding-top: 2rem;
+  flex-direction: column;
+  min-height: 50vh;
+ 
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 50, 0.9),
@@ -95,10 +94,6 @@ const ProjectsDiv = styled.div`
         inset 0px -11px 15px -11px #CCC; 
 }`;
 const ProjectsContainer = styled.div`
-  padding: 2rem 0;
-  min-height: 45rem;
   background: rgba(0, 0, 50, 0.7);
-
-  height: 50rem;
 `;
 export default Projects;

@@ -20,17 +20,13 @@ const SRadio = () => {
     <Project>
       <Left>
         <Heading>Sveriges Radio</Heading>
-        <Skills>Skills Used</Skills>
+        <Skills>Skills</Skills>
         <UL>
           <LI>
             <AiOutlineCheck />
-            HTML & CSS
+            HTML, CSS & JavaScript
           </LI>
 
-          <LI>
-            <AiOutlineCheck />
-            JavaScript
-          </LI>
           <LI>
             <AiOutlineCheck />
             Fetch-API
@@ -44,14 +40,33 @@ const SRadio = () => {
           <LI>
             <AiOutlineCheck /> Responsive Design
           </LI>
+
+          <LI>
+            <AiOutlineCheck />
+            Well-Commented JS Code
+          </LI>
         </UL>
         <Buttons>
           <Button>
-            Website &nbsp; <CgWebsite />
+            <a
+              href="https://devokla-sv-radio.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              Website &nbsp; <CgWebsite />
+            </a>
           </Button>
           <Button>
-            Code &nbsp;
-            <VscFileCode />
+            <a
+              href="https://github.com/DevOkla/public/tree/main/SverigesRadio_VanillaJS"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              Code &nbsp;
+              <VscFileCode />
+            </a>
           </Button>
         </Buttons>
       </Left>

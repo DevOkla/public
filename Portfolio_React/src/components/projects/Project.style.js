@@ -90,9 +90,18 @@ export const Right = styled.div`
   display: flex;
   overflow: hidden;
 
-  border-radius: 0 16px 16px 0;
+  border-radius: 0 1rem 1rem 0;
 `;
 export const IMG = styled.img`
   width: 100%;
   object-fit: cover;
 `;
+export const H1 = styled.h1`
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+ padding: 2rem 0;
+` ;

@@ -21,12 +21,19 @@ const FigmaCard = () => {
             <SiFigma />
           </CardFront>
           <CardBack>
-            <h2>HTML</h2>
+            <Bars>
+              <Green />
+              <Green />
+              <Green />
+              <Red />
+              <Red />
+            </Bars>
+            <h2>Figma</h2>
             &nbsp;
-            <h4>Elements & Attributes</h4>
-            <h4>Web Design & Media</h4>
-            <h4>Production & documentation</h4>
-            <h4>Strong Analytical Skills</h4>
+            <h4>Basics & Wireframes </h4>
+            <h4>Animations & Clickability </h4>
+            <h4>Prototyping & Exporting </h4>
+            <h4>Plugins & Design libraries </h4>
           </CardBack>
         </CardBox>
       </Card>
