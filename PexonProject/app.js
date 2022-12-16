@@ -36,7 +36,7 @@ async function fetchAPI(url) {
     return data;
 }
 async function curatedPhotos() {
-    fetchLink = 'https://api.pexels.com/v1/curated?per_page=15&page=1'
+    fetchLink = 'https://api.pexels.com/v1/curated?per_page=15&page=2'
     const data = await fetchAPI(fetchLink);
     generatePictures(data);
 }
@@ -62,7 +62,8 @@ function generatePictures(data) {
     });
 }
 function updateInput(e) {
-    searchValue = e.target.value;
+    /*adding &nbsp; because the api doesn't recognize words without a space after */
+    searchValue = e.target.value + '&nbsp;';
 }
 
 function clear() {
