@@ -94,7 +94,6 @@ const Button = styled.button`
   color: #313131;
   background: white;
   border: 2px solid black;
-
   width: 100%;
   font-weight: 600;
 `;
@@ -102,6 +101,7 @@ const Button = styled.button`
 const Info = styled.div`
   display: flex;
   flex-direction: column;
+  line-height: 2.5rem;
 
   margin: 2rem 5rem;
 `;
