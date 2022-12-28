@@ -1,9 +1,13 @@
 import './App.css'
 import './index.css';
-import Projects from './sections/Projects';
-import Home from "./sections/Home";
-import Techs from './sections/Techs'
-import SetUp from './sections/SetUp';
+
+import {
+  Home,
+  Projects,
+  Techs,
+  SetUp,
+  Footer
+} from './sections/index.js'
 const App = () => {
   return (
     <div className="App">
@@ -11,6 +15,7 @@ const App = () => {
       <Projects />
       <Techs />
       <SetUp />
+      <Footer />
     </div>
   );
 }

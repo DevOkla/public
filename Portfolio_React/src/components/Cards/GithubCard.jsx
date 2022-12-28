@@ -10,7 +10,7 @@ import {
   Red,
   Green,
 } from "../../components/Card.Style.js";
-import { SiGithub } from "react-icons/si";
+import { SiGit } from "react-icons/si";
 
 const GithubCard = () => {
   return (
@@ -18,22 +18,22 @@ const GithubCard = () => {
       <Card>
         <CardBox>
           <CardFront>
-            <SiGithub />
+            <SiGit />
           </CardFront>
           <CardBack>
             <Bars>
               <Green />
               <Green />
-              <Red />
+              <Green />
               <Red />
               <Red />
             </Bars>
-            <h2>Github</h2>
+            <h2>Git</h2>
             &nbsp;
+            <h4>Git & GitHub </h4>
             <h4>Storing & Tracking</h4>
             <h4>Version & Source control </h4>
             <h4>Pushing & Pulling </h4>
-            <h4>Github Desktop </h4>
           </CardBack>
         </CardBox>
       </Card>

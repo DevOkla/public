@@ -41,10 +41,10 @@ function Recipe() {
 
         {/* if both activeTab and div is true print out div */}
         {activeTab === "instructions" && (
-          <div>
-            <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
-            <h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>
-          </div>
+          <FullRecipe>
+            <p dangerouslySetInnerHTML={{ __html: details.summary }}></p>
+            <p dangerouslySetInnerHTML={{ __html: details.instructions }}></p>
+          </FullRecipe>
         )}
 
         {/* if both activeTab=ingredient and ul is true print out ul */}
@@ -85,6 +85,7 @@ const DetailWrapper = styled.div`
   }
   img {
     border-radius: 2rem;
+    width: 100%;
   }
 `;
 
@@ -92,8 +93,10 @@ const Button = styled.button`
   padding: 1rem 2rem;
   margin: 1rem;
   color: #313131;
-  background: white;
+  background: rgb(255, 255, 255);
   border: 2px solid black;
+  max-width: 25rem;
+  align-self: center;
   width: 100%;
   font-weight: 600;
 `;
@@ -101,8 +104,22 @@ const Button = styled.button`
 const Info = styled.div`
   display: flex;
   flex-direction: column;
-  line-height: 2.5rem;
 
-  margin: 2rem 5rem;
+  margin: 2rem rem;
+  @media (max-width: 900px) {
+    margin: 0rem 1rem;
+  }
+`;
+const FullRecipe = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0rem;
+  font-size: 2rem;
+  line-height: 4rem;
+  @media (max-width: 900px) {
+    margin: 0rem 0.4rem;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 `;
 export default Recipe;

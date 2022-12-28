@@ -22,7 +22,7 @@ const TailWindCard = () => {
           <CardBack>
             <Bars>
               <Green />
-              <Red />
+              <Green />
               <Red />
               <Red />
               <Red />

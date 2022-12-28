@@ -19,7 +19,7 @@ const PexonProject = () => {
   return (
     <Project>
       <Left>
-        <Heading> Photographer</Heading>
+        <Heading> Pexon</Heading>
         <Skills>Skills</Skills>
         <UL>
           <LI>
@@ -47,7 +47,7 @@ const PexonProject = () => {
           </Button>
           <Button>
             <a
-              href="https://github.com/DevOkla/public/tree/main/AhmadPhotography"
+              href="https://github.com/DevOkla/public/tree/main/PexonProject"
               target="_blank"
             >
               Code &nbsp;

@@ -24,7 +24,7 @@ const SASSCard = () => {
             <Bars>
               <Green />
               <Green />
-              <Red />
+              <Green />
               <Red />
               <Red />
             </Bars>

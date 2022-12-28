@@ -31,10 +31,10 @@ const ReactCard = () => {
             <h2>React</h2>
             &nbsp;
             <h4>React fundamentals</h4>
+            <h4>States & Props</h4>
             <h4>Hooks & Dependencies</h4>
             <h4>JSX & Modules</h4>
-            <h4>Virtual DOM</h4>
-            <h4>Node & npm </h4>
+            <h4>NPM & Basic Redux</h4>
           </CardBack>
         </CardBox>
       </Card>

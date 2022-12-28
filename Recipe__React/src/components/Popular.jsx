@@ -4,43 +4,55 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { Link } from "react-router-dom";
 
-function Veggie() {
-  const [veggie, setVeggie] = useState([]);
+function Popular() {
+  const [popular, setPopular] = useState([]);
 
   useEffect(() => {
-    getVeggie();
+    getPopular();
   }, []);
 
-  const getVeggie = async () => {
-    const check = localStorage.getItem("veggie");
-    //check if already exists in memory to skip having new fetch-api (due to limited api usage/day).
+  const getPopular = async () => {
+    const check = localStorage.getItem("popular");
+
     if (check) {
-      setVeggie(JSON.parse(check));
+      setPopular(JSON.parse(check));
     } else {
       const api = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=vegetarian`
+        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`
       );
       const data = await api.json();
 
-      localStorage.setItem("veggie", JSON.stringify(data.recipes));
+      localStorage.setItem("popular", JSON.stringify(data.recipes));
       console.log(data);
-      setVeggie(data.recipes);
+      setPopular(data.recipes);
     }
   };
   return (
     <div>
       <Wrapper>
-        <h3>Vegeterian Picks</h3>
+        <h3>Popular Picks</h3>
         <Splide
           options={{
-            perPage: 3,
+            perPage: 2,
             arrows: false,
             pagination: false,
+            breakpoints: {
+              1200: {
+                perPage: 2,
+                arrows: true,
+              },
+              900: {
+                perPage: 1,
+                arrows: true,
+                wheel: true,
+              },
+            },
+
             drag: "free",
             gap: "5rem",
           }}
         >
-          {veggie.map((recipe) => {
+          {popular.map((recipe) => {
             return (
               <SplideSlide key={recipe.id}>
                 <Card>
@@ -102,4 +114,5 @@ const Gradient = styled.div`
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
 `;
-export default Veggie;
+
+export default Popular;

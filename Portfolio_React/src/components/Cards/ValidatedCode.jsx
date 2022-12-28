@@ -21,6 +21,13 @@ const ValidatedCode = () => {
             <HiCheckBadge />
           </CardFront>
           <CardBack>
+            <Bars>
+              <Green />
+              <Green />
+              <Green />
+              <Green />
+              <Green />
+            </Bars>
             <h2>
               Validation <br /> & Guidlines
             </h2>

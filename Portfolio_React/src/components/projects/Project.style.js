@@ -67,7 +67,7 @@ export const Button = styled.button`
   text-align: center;
   background: Black;
   border: 2px solid white;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   padding: 12px 12px;
   margin: 0rem 0.2rem;
   color: #ffffff;
@@ -82,6 +82,13 @@ export const Button = styled.button`
     color: black;
     border-radius: 6px;
     transition: 300ms;
+  }
+  @media screen and (max-width: 500px ) {
+    padding: 0.2rem 0.5rem;
+    line-height: 2rem;
+    margin: 0rem 0.7rem;
+    border: 1px solid white;
+ 
   }
 `;
 

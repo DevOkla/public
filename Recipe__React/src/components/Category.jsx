@@ -1,5 +1,5 @@
 import { FaPizzaSlice, FaHamburger } from "react-icons/fa";
-import { GiNoodles, GiChopsticks } from "react-icons/gi";
+import { GiNoodles, GiChopsticks, GiHotMeal } from "react-icons/gi";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 function Category() {
@@ -21,15 +21,23 @@ function Category() {
         <GiChopsticks />
         <h4>Japanese</h4>
       </SLink>
+      <SLink to={"/cuisine/Middle Eastern"}>
+        <GiHotMeal />
+        <h4>Mid-East</h4>
+      </SLink>
     </List>
   );
 }
 
 const List = styled.div`
   display: flex;
-
   justify-content: center;
   margin: 2rem 0rem;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 const SLink = styled(NavLink)`
   display: flex;

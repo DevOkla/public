@@ -6,7 +6,6 @@ import { H1 } from "../components/projects/Project.style.js";
 import {
   DiscoverDubai,
   SRadio,
-  OpenAiProject,
   RecipeProject,
   ToDoProject,
   DogApiProject,
@@ -52,9 +51,7 @@ const Projects = () => {
           <SplideSlide>
             <SRadio />
           </SplideSlide>
-          <SplideSlide>
-            <OpenAiProject />
-          </SplideSlide>
+
           <SplideSlide>
             <RecipeProject />
           </SplideSlide>

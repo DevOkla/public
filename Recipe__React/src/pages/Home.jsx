@@ -3,6 +3,7 @@ import Popular from "../components/Popular";
 import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+
 function home() {
   return (
     <Motion
@@ -19,4 +20,5 @@ function home() {
 const Motion = styled(motion.div)`
   text-decoration: none;
 `;
+
 export default home;

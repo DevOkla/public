@@ -13,7 +13,6 @@ const Home = () => {
 const HomeConatiner = styled.div`
   width: 100%;
   height: 100vh;
-  z-index: 4;
 
   background-image: linear-gradient(
       rgba(4, 0, 23, 0.9),

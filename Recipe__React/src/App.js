@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { GiKnifeFork } from 'react-icons/gi'
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
         <Search />
         <Category />
         <Pages />
+
       </BrowserRouter>
     </div>
   );
@@ -38,6 +40,6 @@ const Nav = styled.div`
   svg{
     font-size:2rem ;
   }
-`
+`;
 
 export default App;

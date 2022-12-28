@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
+
+/*Importing Icons */
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-
+import { BsFilePdf } from "react-icons/bs";
 import { MdMilitaryTech } from "react-icons/md";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
@@ -13,16 +14,17 @@ const Hero = () => {
   return (
     <HeroDiv>
       <Logo>
-        <pre> &lt;/DevOkla&gt; </pre>
+        <pre> &lt;DevOkla&gt; </pre>
       </Logo>
       <H1>Front-End Web Developer, Designer and more..</H1>
+
       <Links>
         <Link href="#Projects">
-          Projects &nbsp; <AiOutlineFundProjectionScreen />
+          Projects <AiOutlineFundProjectionScreen />
         </Link>
 
         <Link href="#Technologies">
-          Technologies &nbsp;
+          Technologies
           <MdMilitaryTech />
         </Link>
 
@@ -30,15 +32,19 @@ const Hero = () => {
           href="https://www.linkedin.com/in/maamoun-okla-283120235/"
           target="_blank"
         >
-          Linkedin &nbsp; <AiOutlineLinkedin />
+          Linkedin <AiOutlineLinkedin />
         </Link>
 
         <Link href="https://github.com/DevOkla" target="_blank">
-          Github &nbsp; <AiFillGithub />
+          Github
+          <AiFillGithub />
         </Link>
 
         <Link href="#SetUp">
-          My Setup &nbsp; <GiDesk />
+          My Setup <GiDesk />
+        </Link>
+        <Link href="https://devokla-resume.netlify.app/" target="_blank">
+          CV/Resumé <BsFilePdf />
         </Link>
       </Links>
       <Burger>
@@ -62,7 +68,6 @@ const Hero = () => {
               Projects
             </MiniLink>
             <MiniLink href="#Technologies">
-              {" "}
               <MdMilitaryTech />
               Technologies
             </MiniLink>
@@ -79,6 +84,12 @@ const Hero = () => {
             <MiniLink href="#SetUp">
               <GiDesk />
               SetUp
+            </MiniLink>
+            <MiniLink
+              href="https://devokla-resume.netlify.app/"
+              target="_blank"
+            >
+              <BsFilePdf /> CV/Resumé
             </MiniLink>
           </MiniLinks>
         )}
@@ -135,13 +146,14 @@ const Link = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 4px;
   background: Black;
   border: 2px solid white;
   border-radius: 8px;
   padding: 16px 24px;
   margin: 1rem 2rem;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1em;
   max-width: 100%;
   min-width: 140px;

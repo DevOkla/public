@@ -10,9 +10,7 @@ import {
   HTMLCard,
   CSSCard,
   JSCard,
-  VSCodeCard,
   FigmaCard,
-  FileZillaCard,
   GithubCard,
   ValidatedCode,
 } from "../components/Cards/index.js";
@@ -28,12 +26,9 @@ const Techs = () => {
         <ReactCard />
         <StyledCompCard />
         <SASSCard />
-        <TailWindCard />
-
-        <VSCodeCard />
-        <FigmaCard />
-        <FileZillaCard />
+        <TailWindCard /> 
         <GithubCard />
+        <FigmaCard />
         <ValidatedCode />
       </CardsContainer>
     </TechsContainer>
