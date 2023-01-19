@@ -124,8 +124,7 @@ main {
   height: 100%;
   background: white;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
   z-index: 1;
   opacity: 1;
   /* adding bubble effect */
@@ -140,21 +139,25 @@ main {
 }
 .nav-links {
   font-size: 3rem;
-  flex-basis: 30rem;
+  margin-top: 5rem;
+  text-align: left;
 }
-.nav-links h3 {
-  flex-basis: 50rem;
-}
-.contact {
-  flex-basis: 30rem;
+.nav-links,
+.contact h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5rem 5rem;
 }
 .contact h2 {
-  font-size: 3rem;
-  padding: 2rem 0;
+  padding: 0 5rem 2rem 5rem;
+  font-size: 1.8rem;
 }
 .contact p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  width: 70%;
+  padding: 0 5rem 2rem 5rem;
+  font-size: 1.4rem;
 }
 .reveal-img,
 .reveal-text {
@@ -330,19 +333,26 @@ body.hide {
     margin: 2rem 0;
   }
   .nav-bar {
-    display: block;
+    display: flex;
+ 
+    text-align: left;
+  }
+  .nav-header {
+    width: 100%;
+    padding: 1rem 1rem;
   }
   .nav-links {
     font-size: 2rem;
     text-align: center;
+    padding: 2rem 1rem;
   }
   .contact h2 {
     font-size: 3rem;
-    text-align: center;
+    padding: 1rem 1rem;
   }
-  .contact p {
+  p {
     font-size: 1.2rem;
-    padding: 2rem;
+    padding: 1rem 1rem !important;
   }
 }
 @media screen and (max-width: 700px) {
@@ -361,7 +371,7 @@ body.hide {
     position: static;
   }
   .nav-bar {
-    padding-top: 25vh;
+    padding-top: 10vh;
   }
   .fashion1,
   .fashion2,
@@ -374,5 +384,8 @@ body.hide {
   }
   .fashion-img {
     height: auto;
+  }
+  .cursor {
+    display: none;
   }
 }
